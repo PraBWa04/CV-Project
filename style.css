@@ -1,0 +1,207 @@
+body {
+    background-color:rgba(0, 0, 0, 0.9);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: url('background picture 1 (code).jpg') no-repeat center center / cover;
+    color: white;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0) 20%, rgba(255,255,255,0) 80%, rgba(255,255,255,0.8));
+    backdrop-filter: blur(60px); 
+    z-index: -1;
+}
+
+.centered-text h1, .centered-text h2 {
+    text-shadow: 
+        4px 4px 10px rgba(0, 0, 0, 0.9),
+        -4px -4px 10px rgba(0, 0, 0, 0.9); 
+}
+
+.centered-text h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #eee71c;
+}
+
+.centered-text h2 {
+    font-size: 1.6em;
+    margin: 0px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a {
+    background-color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #4caf50;
+    color: #ffffff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.why-choose-me {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.why-choose-me h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.benefit-item {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-item .icon {
+    font-size: 2em;
+}
+
+.contact-me {
+    background-color: #673ab7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-me:hover {
+    background-color: #5e35b1;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 40px;
+    background-color: #000;
+}
+
+.profile {
+    max-width: 50%;
+}
+
+.profile-image {
+    width: 70%; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.skills {
+    max-width: 40%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.skills h4 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: rgba(255,255,255,0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: background-color 0.3s;
+}
+
+.skills li:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.my-roadmap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+}
+
+.my-roadmap .roadmap ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.my-roadmap .roadmap ul li {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    color: #fff; 
+    transition: background-color 0.3s;
+}
+
+.my-roadmap .roadmap ul li.html { background-color: #e34c26; }
+.my-roadmap .roadmap ul li.css { background-color: #2965f1; }
+.my-roadmap .roadmap ul li.js { background-color: #f0db4f; }
+.my-roadmap .roadmap ul li.bootstrap { background-color: #563d7c; }
+.my-roadmap .roadmap ul li.jquery { background-color: #0769ad; }
+.my-roadmap .roadmap ul li.react { background-color: #61dbfb; }
